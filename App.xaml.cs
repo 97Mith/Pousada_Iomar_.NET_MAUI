@@ -1,12 +1,14 @@
-﻿namespace IomarPousada
-{
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
+﻿using IomarPousada.Data.Interface;
+using IomarPousada.MVVM.View;
 
-            MainPage = new AppShell();
-        }
+namespace IomarPousada;
+
+public partial class App : Application
+{
+    public App(ICompanyRepository company)
+    {
+        InitializeComponent();
+
+        MainPage = new NavigationPage(new HomePage(company));
     }
 }
