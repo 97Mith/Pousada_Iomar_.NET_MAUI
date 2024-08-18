@@ -61,6 +61,36 @@
     <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\add.scale-100.png">
+      <PackagePath>add.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\add.scale-125.png">
+      <PackagePath>add.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\add.scale-150.png">
+      <PackagePath>add.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\add.scale-200.png">
+      <PackagePath>add.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\add.scale-400.png">
+      <PackagePath>add.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addnote.scale-100.png">
+      <PackagePath>addnote.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addnote.scale-125.png">
+      <PackagePath>addnote.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addnote.scale-150.png">
+      <PackagePath>addnote.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addnote.scale-200.png">
+      <PackagePath>addnote.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\addnote.scale-400.png">
+      <PackagePath>addnote.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
@@ -199,6 +229,51 @@
     <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backarrow.scale-100.png">
+      <PackagePath>backarrow.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backarrow.scale-125.png">
+      <PackagePath>backarrow.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backarrow.scale-150.png">
+      <PackagePath>backarrow.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backarrow.scale-200.png">
+      <PackagePath>backarrow.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backarrow.scale-400.png">
+      <PackagePath>backarrow.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bedicon.scale-100.png">
+      <PackagePath>bedicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bedicon.scale-125.png">
+      <PackagePath>bedicon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bedicon.scale-150.png">
+      <PackagePath>bedicon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bedicon.scale-200.png">
+      <PackagePath>bedicon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bedicon.scale-400.png">
+      <PackagePath>bedicon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\companyicon.scale-100.png">
+      <PackagePath>companyicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\companyicon.scale-125.png">
+      <PackagePath>companyicon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\companyicon.scale-150.png">
+      <PackagePath>companyicon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\companyicon.scale-200.png">
+      <PackagePath>companyicon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\companyicon.scale-400.png">
+      <PackagePath>companyicon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -213,6 +288,126 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-100.png">
+      <PackagePath>edit.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-125.png">
+      <PackagePath>edit.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-150.png">
+      <PackagePath>edit.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-200.png">
+      <PackagePath>edit.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-400.png">
+      <PackagePath>edit.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editimage.scale-100.png">
+      <PackagePath>editimage.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editimage.scale-125.png">
+      <PackagePath>editimage.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editimage.scale-150.png">
+      <PackagePath>editimage.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editimage.scale-200.png">
+      <PackagePath>editimage.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\editimage.scale-400.png">
+      <PackagePath>editimage.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\financeicon.scale-100.png">
+      <PackagePath>financeicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\financeicon.scale-125.png">
+      <PackagePath>financeicon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\financeicon.scale-150.png">
+      <PackagePath>financeicon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\financeicon.scale-200.png">
+      <PackagePath>financeicon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\financeicon.scale-400.png">
+      <PackagePath>financeicon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group.scale-100.png">
+      <PackagePath>group.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group.scale-125.png">
+      <PackagePath>group.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group.scale-150.png">
+      <PackagePath>group.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group.scale-200.png">
+      <PackagePath>group.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group.scale-400.png">
+      <PackagePath>group.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ledsnoobs.scale-100.png">
+      <PackagePath>ledsnoobs.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ledsnoobs.scale-125.png">
+      <PackagePath>ledsnoobs.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ledsnoobs.scale-150.png">
+      <PackagePath>ledsnoobs.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ledsnoobs.scale-200.png">
+      <PackagePath>ledsnoobs.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ledsnoobs.scale-400.png">
+      <PackagePath>ledsnoobs.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\personicon.scale-100.png">
+      <PackagePath>personicon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\personicon.scale-125.png">
+      <PackagePath>personicon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\personicon.scale-150.png">
+      <PackagePath>personicon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\personicon.scale-200.png">
+      <PackagePath>personicon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\personicon.scale-400.png">
+      <PackagePath>personicon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-100.png">
+      <PackagePath>profile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-125.png">
+      <PackagePath>profile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-150.png">
+      <PackagePath>profile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-200.png">
+      <PackagePath>profile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-400.png">
+      <PackagePath>profile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\willdeepass.scale-100.png">
+      <PackagePath>willdeepass.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\willdeepass.scale-125.png">
+      <PackagePath>willdeepass.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\willdeepass.scale-150.png">
+      <PackagePath>willdeepass.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\willdeepass.scale-200.png">
+      <PackagePath>willdeepass.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\willdeepass.scale-400.png">
+      <PackagePath>willdeepass.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\IomarPousada.deps.json">
       <PackagePath>IomarPousada.deps.json</PackagePath>
