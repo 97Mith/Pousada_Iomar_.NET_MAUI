@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IomarPousada.MVVM.View.AccomodationPage"
+             Title="AccomodationPage">
+    <ScrollView>
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*">
+            <StackLayout Padding="10" Spacing="5" Grid.Column="0">
+                <Frame HasShadow="False" Padding="10" BackgroundColor="Transparent">
+                    <VerticalStackLayout Spacing="0">
+                        <!-- Company Name Label -->
+                        <Label Text="Andaime"
+                               FontFamily="Jaldi"
+                               FontSize="14"
+                               HorizontalOptions="Center" />
+
+                        <!-- Horizontal Layout for NÂ°1, Circle, and Ocupado Label -->
+                        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+                            <Label Text="NÂ°1"
+                                   FontFamily="Jaldi"
+                                   FontSize="14" />
+
+                            <!-- Red Circle -->
+                            <BoxView WidthRequest="11"
+                                     HeightRequest="11"
+                                     CornerRadius="5.5"
+                                     Color="Red"
+                                     VerticalOptions="Center" />
+
+                            <!-- Ocupado Label -->
+                            <Label Text="Ocupado"
+                                   FontFamily="Jaldi"
+                                   FontSize="10"
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+
+                        <!-- Rectangle with Corner Radius -->
+                        <Frame CornerRadius="18"
+                               BackgroundColor="Transparent"
+                               BorderColor="Black"
+                               Padding="0"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start">
+
+                            <!-- New Content Inside the Rectangle -->
+                            <VerticalStackLayout Spacing="2">
+                                <!-- First Rectangle with Avatar and Label -->
+                                <Frame BackgroundColor="#1C242F"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <HorizontalStackLayout Padding="5" Spacing="10">
+                                        <!-- Avatar Circle -->
+                                        <Image WidthRequest="31"
+                                               Source="profile.png"
+                                               BackgroundColor="Transparent"
+                                               HorizontalOptions="Start"
+                                               VerticalOptions="Center">
+                                            <!-- Avatar content or image could go here -->
+                                        </Image>
+
+                                        <!-- Name Label -->
+                                        <Label Text="Ana PatrÃ­cia"
+                                               FontFamily="Jaldi"
+                                               FontSize="11"
+                                               TextColor="#757575"
+                                               VerticalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+
+                                <!-- Second Rectangle with Avatar and Label -->
+                                <Frame BackgroundColor="#1C242F"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <HorizontalStackLayout Padding="5" Spacing="10">
+                                        <!-- Avatar Circle -->
+                                        <Image WidthRequest="31"
+                                               Source="willdeepass.png"
+                                               BackgroundColor="Transparent"
+                                               HorizontalOptions="Start"
+                                               VerticalOptions="Center">
+                                            <!-- Avatar content or image could go here -->
+                                        </Image>
+
+                                        <!-- Name Label -->
+                                        <Label Text="Algusto Chaves"
+                                               FontFamily="Jaldi"
+                                               FontSize="11"
+                                               TextColor="#757575"
+                                               VerticalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+
+                                <!-- Third Rectangle with Green + Label -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <HorizontalStackLayout Padding="5" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                        <Image Source="add.png"
+                                               WidthRequest="18"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+
+                                <!-- Fourth Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Second Bedroom-->
+            <StackLayout Padding="10" Spacing="20" Grid.Column="1">
+                <Frame HasShadow="False" Padding="10" BackgroundColor="Transparent">
+                    <VerticalStackLayout Spacing="0">
+                        <!-- Company Name Label -->
+                        <Label Text="-"
+                               FontFamily="Jaldi"
+                               FontSize="14"
+                               HorizontalOptions="Center" />
+
+                        <!-- Horizontal Layout for NÂ°1, Circle, and Ocupado Label -->
+                        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+                            <Label Text="NÂ°2"
+                                   FontFamily="Jaldi"
+                                   FontSize="14" />
+
+                            <!-- Red Circle -->
+                            <BoxView WidthRequest="11"
+                                     HeightRequest="11"
+                                     CornerRadius="5.5"
+                                     Color="LimeGreen"
+                                     VerticalOptions="Center" />
+
+                            <!-- DisponÃ­vel Label -->
+                            <Label Text="DisponÃ­vel"
+                                   FontFamily="Jaldi"
+                                   FontSize="10"
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+
+                        <!-- Rectangle with Corner Radius -->
+                        <Frame CornerRadius="18"
+                               BackgroundColor="Transparent"
+                               BorderColor="Black"
+                               Padding="0"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start">
+
+                            <!-- New Content Inside the Rectangle -->
+                            <VerticalStackLayout Spacing="2">
+                                <!-- First Rectangle with Avatar and Label -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <HorizontalStackLayout Padding="5" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                        <Image Source="add.png"
+                                               WidthRequest="18"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+
+                                <!-- Second Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+
+                                <!-- Third Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+
+                                <!-- Forth Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Third Bedroom-->
+            <StackLayout Padding="10" Spacing="5" Grid.Column="0" Grid.Row="1">
+                <Frame HasShadow="False" Padding="10" BackgroundColor="Transparent">
+                    <VerticalStackLayout Spacing="0">
+                        <!-- Company Name Label -->
+                        <Label Text="PRAF"
+                               FontFamily="Jaldi"
+                               FontSize="14"
+                               HorizontalOptions="Center" />
+
+                        <!-- Horizontal Layout for NÂ°1, Circle, and Ocupado Label -->
+                        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+                            <Label Text="NÂ°3"
+                                   FontFamily="Jaldi"
+                                   FontSize="14" />
+
+                            <!-- Red Circle -->
+                            <BoxView WidthRequest="11"
+                                     HeightRequest="11"
+                                     CornerRadius="5.5"
+                                     Color="Orange"
+                                     VerticalOptions="Center" />
+
+                            <!-- DisponÃ­vel Label -->
+                            <Label Text="24/08"
+                                   FontFamily="Jaldi"
+                                   FontSize="10"
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+
+                        <!-- Rectangle with Corner Radius -->
+                        <Frame CornerRadius="18"
+                               BackgroundColor="Transparent"
+                               BorderColor="Black"
+                               Padding="0"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start">
+
+                            <!-- New Content Inside the Rectangle -->
+                            <VerticalStackLayout Spacing="2">
+                                <!-- First Rectangle with Avatar and Label -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <HorizontalStackLayout Padding="5" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                        <Image Source="add.png"
+                                               WidthRequest="18"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+
+                                <!-- Second Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+
+                                <!-- Third Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+
+                                <!-- Forth Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Forth Bedroom-->
+            <StackLayout Padding="10" Spacing="20" Grid.Column="1" Grid.Row="1">
+                <Frame HasShadow="False" Padding="10" BackgroundColor="Transparent">
+                    <VerticalStackLayout Spacing="0">
+                        <!-- Company Name Label -->
+                        <Label Text="Estel"
+                               FontFamily="Jaldi"
+                               FontSize="14"
+                               HorizontalOptions="Center" />
+
+                        <!-- Horizontal Layout for NÂ°1, Circle, and Ocupado Label -->
+                        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+                            <Label Text="NÂ°4"
+                                   FontFamily="Jaldi"
+                                   FontSize="14" />
+
+                            <!-- Red Circle -->
+                            <BoxView WidthRequest="11"
+                                     HeightRequest="11"
+                                     CornerRadius="5.5"
+                                     Color="Orange"
+                                     VerticalOptions="Center" />
+
+                            <!-- DisponÃ­vel Label -->
+                            <Label Text="16/09"
+                                   FontFamily="Jaldi"
+                                   FontSize="10"
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+
+                        <!-- Rectangle with Corner Radius -->
+                        <Frame CornerRadius="18"
+                               BackgroundColor="Transparent"
+                               BorderColor="Black"
+                               Padding="0"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start">
+
+                            <!-- New Content Inside the Rectangle -->
+                            <VerticalStackLayout Spacing="2">
+                                <!-- First Rectangle with Avatar and Label -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <HorizontalStackLayout Padding="5" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                        <Image Source="add.png"
+                                               WidthRequest="18"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+
+                                <!-- Second Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                           HeightRequest="43"
+                           Padding="0"
+                           CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+
+                                <!-- Third Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                           HeightRequest="43"
+                           Padding="0"
+                           CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+
+                                <!-- Forth Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                           HeightRequest="43"
+                           Padding="0"
+                           CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Second Bedroom-->
+            <StackLayout Padding="10" Spacing="20" Grid.Column="0" Grid.Row="2">
+                <Frame HasShadow="False" Padding="10" BackgroundColor="Transparent">
+                    <VerticalStackLayout Spacing="0">
+                        <!-- Company Name Label -->
+                        <Label Text="-"
+                               FontFamily="Jaldi"
+                               FontSize="14"
+                               HorizontalOptions="Center" />
+
+                        <!-- Horizontal Layout for NÂ°1, Circle, and Ocupado Label -->
+                        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+                            <Label Text="NÂ°5"
+                                   FontFamily="Jaldi"
+                                   FontSize="14" />
+
+                            <!-- Red Circle -->
+                            <BoxView WidthRequest="11"
+                                     HeightRequest="11"
+                                     CornerRadius="5.5"
+                                     Color="LimeGreen"
+                                     VerticalOptions="Center" />
+
+                            <!-- DisponÃ­vel Label -->
+                            <Label Text="DisponÃ­vel"
+                                   FontFamily="Jaldi"
+                                   FontSize="10"
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+
+                        <!-- Rectangle with Corner Radius -->
+                        <Frame CornerRadius="18"
+                               BackgroundColor="Transparent"
+                               BorderColor="Black"
+                               Padding="0"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start">
+
+                            <!-- New Content Inside the Rectangle -->
+                            <VerticalStackLayout Spacing="2">
+                                <!-- First Rectangle with Avatar and Label -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <HorizontalStackLayout Padding="5" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                        <Image Source="add.png"
+                                               WidthRequest="18"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+
+                                <!-- Second Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+
+                                <!-- Third Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+
+                                <!-- Forth Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <!-- Empty Content -->
+                                </Frame>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!-- Sixth Bedroom-->
+            <StackLayout Padding="10" Spacing="20" Grid.Column="1" Grid.Row="2">
+                <Frame HasShadow="False" Padding="10" BackgroundColor="Transparent">
+                    <VerticalStackLayout Spacing="0">
+                        <!-- Company Name Label -->
+                        <Label Text="-- sem empresa --"
+                               FontFamily="Jaldi"
+                               FontSize="14"
+                               HorizontalOptions="Center" />
+
+                        <!-- Horizontal Layout for NÂ°1, Circle, and Ocupado Label -->
+                        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+                            <Label Text="NÂ°6"
+                                   FontFamily="Jaldi"
+                                   FontSize="14" />
+
+                            <!-- Red Circle -->
+                            <BoxView WidthRequest="11"
+                                     HeightRequest="11"
+                                     CornerRadius="5.5"
+                                     Color="Red"
+                                     VerticalOptions="Center" />
+
+                            <!-- DisponÃ­vel Label -->
+                            <Label Text="10/10"
+                                   FontFamily="Jaldi"
+                                   FontSize="10"
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+
+                        <!-- Rectangle with Corner Radius -->
+                        <Frame CornerRadius="18"
+                               BackgroundColor="Transparent"
+                               BorderColor="Black"
+                               Padding="0"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start">
+
+                            <!-- New Content Inside the Rectangle -->
+                            <VerticalStackLayout Spacing="2">
+                                <!-- First Rectangle with Avatar and Label -->
+                                <Frame BackgroundColor="#1C242F"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <HorizontalStackLayout Padding="5" Spacing="10">
+                                        <!-- Avatar Circle -->
+                                        <Image WidthRequest="31"
+                                               Source="ledsnoobs.png"
+                                               BackgroundColor="Transparent"
+                                               HorizontalOptions="Start"
+                                               VerticalOptions="Center">
+                                            <!-- Avatar content or image could go here -->
+                                        </Image>
+
+                                        <!-- Name Label -->
+                                        <Label Text="Rosa Maria Noobs"
+                                               FontFamily="Jaldi"
+                                               FontSize="11"
+                                               TextColor="#757575"
+                                               VerticalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+
+                                <!-- Second Rectangle, Empty -->
+                                <Frame BackgroundColor="#757575"
+                                       HeightRequest="43"
+                                       Padding="0"
+                                       CornerRadius="0">
+                                    <HorizontalStackLayout Padding="5" Spacing="10" HorizontalOptions="CenterAndExpand">
+                                        <Image Source="add.png"
+                                               WidthRequest="18"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
