@@ -1,12 +1,143 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:IomarPousada.MVVM.ViewModel"
              x:Class="IomarPousada.MVVM.View.EditCompany"
              Title="EditCompany">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ContentPage.BindingContext>
+        <viewModels:EditCompanyViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout Spacing="10">
+
+        <!-- Barra Superior -->
+        <Border Background="#1C242F" Stroke="Transparent" StrokeShape="RoundRectangle 22" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image 
+                    WidthRequest="17" 
+                    HeightRequest="17" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Grid.Column="0" 
+                    Source="backarrow.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="BackOnClick"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label 
+                    Text="Adicionar Empresa" 
+                    FontSize="17" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    TextColor="White" 
+                    FontFamily="Jaldi" 
+                    Grid.Column="1"/>
+            </Grid>
+        </Border>
+
+        <!-- Primeira Seção do Formulário: Nome, Razão Social, CNPJ -->
+        <StackLayout BackgroundColor="#1C242F" Padding="30" Spacing="15">
+            <Entry 
+                x:Name="EntryName"
+                Placeholder="Nome *" 
+                FontSize="16" 
+                TextColor="#B3B3B3" 
+                PlaceholderColor="#B3B3B3"
+                Text="{Binding Company.Name, Mode=TwoWay}"/>
+
+            <Entry
+                x:Name="EntryCr"
+                Placeholder="Razão Social *" 
+                FontSize="16" 
+                TextColor="#B3B3B3" 
+                PlaceholderColor="#B3B3B3"
+                Text="{Binding Company.CorporateReason, Mode=TwoWay}"/>
+
+            <Entry 
+                x:Name="EntryCnpj"
+                Placeholder="CNPJ *" 
+                FontSize="16" 
+                TextColor="#B3B3B3" 
+                PlaceholderColor="#B3B3B3"
+                Text="{Binding Company.Cnpj, Mode=TwoWay}"/>
+        </StackLayout>
+
+        <!-- Segunda Seção do Formulário: Endereço, Telefones -->
+        <StackLayout BackgroundColor="#1C242F" Padding="30" Spacing="15">
+            <!-- Telefones -->
+            <Grid ColumnDefinitions="*,*">
+                <Entry 
+                    x:Name="EntryTel1"
+                    Placeholder="Telefone 1" 
+                    FontSize="16" 
+                    TextColor="#B3B3B3" 
+                    PlaceholderColor="#B3B3B3" 
+                    Grid.Column="0"
+                    Text="{Binding Company.PhoneNumber1, Mode=TwoWay}"/>
+                <Entry 
+                    x:Name="EntryTel2"
+                    Placeholder="Telefone 2" 
+                    FontSize="16" 
+                    TextColor="#B3B3B3" 
+                    PlaceholderColor="#B3B3B3" 
+                    Grid.Column="1"
+                    Text="{Binding Company.PhoneNumber2, Mode=TwoWay}"/>
+            </Grid>
+
+            <!-- Email -->
+            <Entry 
+                x:Name="EntryEmail"
+                Placeholder="Email" 
+                FontSize="16" 
+                TextColor="#B3B3B3" 
+                PlaceholderColor="#B3B3B3"
+                Text="{Binding Company.Email, Mode=TwoWay}"/>
+
+            <!-- Endereço -->
+            <Entry 
+                x:Name="EntryStreet"
+                Placeholder="Endereço (Rua)" 
+                FontSize="16" 
+                TextColor="#B3B3B3" 
+                PlaceholderColor="#B3B3B3"
+                Text="{Binding Company.Street, Mode=TwoWay}"/>
+
+            <!-- Cidade, Estado, Bairro -->
+            <Grid ColumnDefinitions="*,*,*">
+                <Entry 
+                    x:Name="EntryCity"
+                    Placeholder="Cidade" 
+                    FontSize="16" 
+                    TextColor="#B3B3B3" 
+                    PlaceholderColor="#B3B3B3" 
+                    Grid.Column="0"
+                    Text="{Binding Company.City, Mode=TwoWay}"/>
+
+                <Entry 
+                    x:Name="EntryState"
+                    Placeholder="Estado" 
+                    FontSize="16" 
+                    TextColor="#B3B3B3" 
+                    PlaceholderColor="#B3B3B3" 
+                    Grid.Column="1"
+                    Text="{Binding Company.State, Mode=TwoWay}"/>
+            </Grid>
+        </StackLayout>
+
+        <!-- Botão de Salvar -->
+        <Button 
+            Text="Salvar" 
+            BackgroundColor="#E3BC3F" 
+            TextColor="#1C242F" 
+            FontSize="17"
+            Clicked="ValidateFieldsAndSave"/>
+
+        <Label x:Name="LabelError" TextColor="Red" IsVisible="False"/>
+    </StackLayout>
+
 </ContentPage>

@@ -27,7 +27,7 @@ public partial class EditCompanyViewModel : ObservableObject
         SaveCommand = new Command(async () => await SaveCompany());
     }
 
-    private async Task SaveCompany()
+    public async Task SaveCompany()
     {
         await _companyRepository.InitializeAsync();
         await _companyRepository.UpdateAsync(Company);

@@ -66,7 +66,7 @@ public partial class CompanyViewModel : ObservableObject
         IsErrorVisible = false;
     }
 
-    private async Task AddCompany()
+    public async Task AddCompany()
     {
         await _companyRepository.InitializeAsync();
         await _companyRepository.AddAsync(Company);
