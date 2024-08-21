@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IomarPousada</name>
+    </assembly>
+    <members>
+        <member name="T:IomarPousada.MVVM.ViewModel.CompanyViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.CompanyViewModel.Companies">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.CompanyViewModel._companies"/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.CompanyViewModel.Company">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.CompanyViewModel._company"/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.CompanyViewModel.IsRefreshing">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.CompanyViewModel._isRefreshing"/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.CompanyViewModel.ErrorMessage">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.CompanyViewModel._errorMessage"/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.CompanyViewModel.IsErrorVisible">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.CompanyViewModel._isErrorVisible"/>
+        </member>
+        <member name="T:IomarPousada.MVVM.ViewModel.EditCompanyViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.EditCompanyViewModel.Company">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.EditCompanyViewModel._company"/>
+        </member>
+        <member name="T:IomarPousada.MVVM.ViewModel.PersonViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.PersonViewModel.People">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.PersonViewModel._people"/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.PersonViewModel.IsRefreshing">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.PersonViewModel._isRefreshing"/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.PersonViewModel.ErrorMessage">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.PersonViewModel._errorMessage"/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.PersonViewModel.IsErrorVisible">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.PersonViewModel._isErrorVisible"/>
+        </member>
+        <member name="P:IomarPousada.MVVM.ViewModel.PersonViewModel.Person">
+            <inheritdoc cref="F:IomarPousada.MVVM.ViewModel.PersonViewModel._person"/>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Companies">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Companies" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Company">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Company" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsErrorVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsErrorVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.People">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "People" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Person">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Person" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Companies">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Companies" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Company">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Company" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsRefreshing">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsRefreshing" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsErrorVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsErrorVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.People">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "People" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Person">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Person" generated properties.</summary>
+        </member>
+    </members>
+</doc>

@@ -74,33 +74,43 @@
             Spacing="15">
 
             <Entry 
+                x:Name="EntryName"
                 Placeholder="Nome" 
                 FontSize="16" 
                 TextColor="#B3B3B3" 
-                PlaceholderColor="#B3B3B3"/>
+                PlaceholderColor="#B3B3B3"
+                Text="{Binding Person.Name, Mode=TwoWay}"/>
 
             <Entry 
+                x:Name="EntryLastName"
                 Placeholder="Sobrenome" 
                 FontSize="16" 
                 TextColor="#B3B3B3" 
-                PlaceholderColor="#B3B3B3"/>
+                PlaceholderColor="#B3B3B3"
+                Text="{Binding Person.LastName, Mode=TwoWay}"/>
 
             <Grid ColumnDefinitions="*,*">
 
                 <Entry 
+                    x:Name="EntryCpf"
                     Placeholder="CPF" 
                     FontSize="16" 
                     TextColor="#B3B3B3" 
                     PlaceholderColor="#B3B3B3" 
-                    Grid.Column="0">
+                    Grid.Column="0"
+                    Keyboard="Numeric"
+                    Text="{Binding Person.Cpf, Mode=TwoWay}">
                 </Entry>
 
                 <Entry 
+                    x:Name="EntryPhoneNum"
                     Placeholder="Telefone" 
                     FontSize="16" 
                     TextColor="#B3B3B3" 
                     PlaceholderColor="#B3B3B3" 
-                    Grid.Column="1">
+                    Grid.Column="1"
+                    Keyboard="Numeric"
+                    Text="{Binding Person.PhoneNumber}">
                 </Entry>
 
             </Grid>
@@ -142,7 +152,10 @@
             Text="Salvar" 
             BackgroundColor="#E3BC3F" 
             TextColor="#1C242F" 
-            FontSize="18"/>
+            FontSize="18"
+            Clicked="ValidateFieldsAndSave"/>
+
+        <Label x:Name="LabelError" TextColor="Red" IsVisible="False"/>
     </StackLayout>
 
 </ContentPage>

@@ -64,6 +64,7 @@
                 FontSize="16" 
                 TextColor="#B3B3B3" 
                 PlaceholderColor="#B3B3B3"
+                Keyboard="Numeric"
                 Text="{Binding Company.Cnpj, Mode=TwoWay}"/>
         </StackLayout>
 
@@ -78,6 +79,7 @@
                     TextColor="#B3B3B3" 
                     PlaceholderColor="#B3B3B3" 
                     Grid.Column="0"
+                    Keyboard="Numeric"
                     Text="{Binding Company.PhoneNumber1, Mode=TwoWay}"/>
                 <Entry 
                     x:Name="EntryTel2"
@@ -86,6 +88,7 @@
                     TextColor="#B3B3B3" 
                     PlaceholderColor="#B3B3B3" 
                     Grid.Column="1"
+                    Keyboard="Numeric"
                     Text="{Binding Company.PhoneNumber2, Mode=TwoWay}"/>
             </Grid>
 

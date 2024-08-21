@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\PICHAU\source\repos\IomarPousada\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-21T13:52:36.696</Modified>
+      <Modified>2024-08-21T14:12:10.103</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\IomarPousada.dll">
       <PackagePath>IomarPousada.dll</PackagePath>
-      <Modified>2024-08-21T13:52:35.763</Modified>
+      <Modified>2024-08-21T14:12:09.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>IomarPousada.exe</PackagePath>
-      <Modified>2024-08-21T13:52:35.763</Modified>
+      <Modified>2024-08-21T14:12:09.648</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PICHAU\source\repos\IomarPousada\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

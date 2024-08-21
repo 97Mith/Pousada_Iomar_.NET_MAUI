@@ -12,7 +12,7 @@ public partial class GuestsPage : ContentPage
 
     private void AddPerson(object sender, EventArgs e)
     {
-		Navigation.PushModalAsync(new NewPerson());
+		Navigation.PushModalAsync(new NewPerson(_service));
     }
 
     private void EditPerson(object sender, TappedEventArgs e)
