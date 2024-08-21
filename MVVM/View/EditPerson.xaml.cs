@@ -4,17 +4,17 @@ using System.Text;
 
 namespace IomarPousada.MVVM.View;
 
-public partial class NewPerson : ContentPage
+public partial class EditPerson : ContentPage
 {
-	private readonly IPersonRepository _personRepository;
-	private PersonViewModel _personViewModel;
-	public NewPerson(IPersonRepository personRepository)
+    private readonly IPersonRepository _personRepository;
+    private EditPersonViewModel _personViewModel;
+	public EditPerson(IPersonRepository _personService, Person person)
 	{
 		InitializeComponent();
-		_personRepository = personRepository;
-		_personViewModel = new PersonViewModel(_personRepository, Navigation);
-		BindingContext = _personViewModel;
-	}
+        _personRepository = _personService;
+        _personViewModel = new EditPersonViewModel(_personRepository, person, Navigation );
+        BindingContext = _personViewModel;
+    }
 
     private void BackOnClick(object sender, TappedEventArgs e)
     {
@@ -32,7 +32,7 @@ public partial class NewPerson : ContentPage
         else
         {
             LabelError.IsVisible = false;
-            await _personViewModel.AddPerson();
+            await _personViewModel.SavePerson();
         }
     }
 

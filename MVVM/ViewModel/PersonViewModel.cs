@@ -30,7 +30,7 @@ public partial class PersonViewModel : ObservableObject
     public ICommand DisplayCommand { get; set; }
     public ICommand DisplayByIdCommand { get; set; }
     public ICommand RefreshCommand { get; set; }
-    public ICommand ToEditComand {  get; set; }
+    public ICommand ToEditCommand {  get; set; }
 
     private readonly IPersonRepository _personRepository;
     private readonly INavigation _navigation;
@@ -48,6 +48,8 @@ public partial class PersonViewModel : ObservableObject
         RemoveCommand = new Command<Person>(async (person) => await DeletePerson(person));
         UpdateCommand = new Command(async () => await UpdatePerson());
         DisplayCommand = new Command(async () => await DisplayPeople());
+        RefreshCommand = new Command(async () => await Refresh());
+        ToEditCommand = new Command<Person>(async (person) => await ToEditPerson(person));
 
         LoadPeople();
     }
@@ -108,13 +110,14 @@ public partial class PersonViewModel : ObservableObject
         IsRefreshing = false;
     }
 
-    private async Task EditPerson(Person person)
+    private async Task ToEditPerson(Person person)
     {
-        //TODO
+        await _navigation.PushModalAsync(new EditPerson(_personRepository, person));
     }
 
     private async void LoadPeople()
     {
         await DisplayPeople();
     }
+
 }

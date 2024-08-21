@@ -1,177 +1,131 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:IomarPousada.MVVM.ViewModel"
              x:Class="IomarPousada.MVVM.View.GuestsPage"
              Title="GuestsPage">
-    <ScrollView>
-        <VerticalStackLayout>
-            <!-- Novo Frame inserido aqui -->
-            <Frame
-                Margin="3"
-                HeightRequest="70"
-                BackgroundColor="#D9D9D9"
-                CornerRadius="18"
-                Padding="7"
-                HasShadow="False">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="EditPerson"/>
-                </Frame.GestureRecognizers>
 
-                <Grid ColumnDefinitions="60,*,Auto" RowDefinitions="Auto,Auto">
-                    <!-- Coluna 0, Linhas 0 e 1: CÃ­rculo -->
-                    <Image
-                        Grid.RowSpan="2"
-                        WidthRequest="46"
-                        Source="profile.png"
-                        BackgroundColor="Transparent"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center" />
+    <ContentPage.BindingContext>
+        <vm:PersonViewModel />
+    </ContentPage.BindingContext>
 
-                    <!-- Coluna 1, Linha 0: Nome -->
-                    <Label
-                        Grid.Column="1"
-                        Margin="5"
-                        Text="JosÃ© de Alcantara"
-                        FontFamily="Jaldi"
-                        FontSize="15"
-                        TextColor="#757575"
-                        VerticalOptions="End"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-                    <!-- Coluna 1, Linha 1: Label "PRAF" -->
-                    <Label
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Margin="5"
-                        Text="PRAF"
-                        FontSize="12"
-                        TextColor="#B3B3B3"
-                        VerticalOptions="Start"/>
+        <!-- Search bar at the top right corner -->
+        <Grid Grid.Row="0" >
+            <SearchBar 
+                x:Name="SearchBar"
+                Placeholder="Search..."
+                TextChanged="OnSearchTextChanged"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Start"
+                WidthRequest="380"
+                Margin="10,5"/>
 
-                    <!-- Coluna 2, Linha 1: NÃºmero de Telefone -->
-                    <Label
-                        Grid.Column="2"
-                        Grid.Row="1"
-                        Text="(99) 99999-9999"
-                        Padding="2"
-                        FontSize="15"
-                        TextColor="#B3B3B3"
-                        VerticalOptions="Start"
-                        HorizontalOptions="End"/>
-                </Grid>
-            </Frame>
-            <!-- Fim do Frame -->
+            <!-- Conditional content for Windows only using OnPlatform -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start">
+                <OnPlatform x:TypeArguments="View">
+                    <On Platform="WinUI">
+                        <Button Text="Refresh" Command="{Binding RefreshCommand}" Margin="5"/>
+                    </On>
+                </OnPlatform>
+            </StackLayout>
+        </Grid>
 
-            <Frame
-                Margin="3"
-                HeightRequest="70"
-                BackgroundColor="#D9D9D9"
-                CornerRadius="18"
-                Padding="7"
-                HasShadow="False">
+        <!-- Scrollable list of frames with swipe-to-delete and tap-to-edit functionality -->
+        <ScrollView Grid.Row="1">
+            <CollectionView ItemsSource="{Binding People}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <!-- SwipeView to enable swipe-to-delete functionality -->
+                        <SwipeView>
+                            <SwipeView.LeftItems>
+                                <SwipeItems>
+                                    <SwipeItem
+                                        Text="Delete"
+                                        BackgroundColor="Red"
+                                        Command="{Binding BindingContext.RemoveCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}"
+                                        CommandParameter="{Binding .}" />
+                                </SwipeItems>
+                            </SwipeView.LeftItems>
 
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="EditPerson"/>
-                </Frame.GestureRecognizers>
+                            <!-- Frame representing each person -->
+                            <Frame
+                                Margin="3"
+                                HeightRequest="70"
+                                BackgroundColor="#D9D9D9"
+                                CornerRadius="18"
+                                Padding="7"
+                                HasShadow="False">
 
-                <Grid ColumnDefinitions="60,*,Auto" RowDefinitions="Auto,Auto">
-                    <!-- Coluna 0, Linhas 0 e 1: CÃ­rculo -->
-                    <Image
-                        Grid.RowSpan="2"
-                        WidthRequest="46"
-                        Source="ledsnoobs.png"
-                        BackgroundColor="Transparent"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center" />
+                                <!-- TapGestureRecognizer to navigate to EditPerson -->
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding BindingContext.ToEditCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding .}" />
+                                </Frame.GestureRecognizers>
 
-                    <!-- Coluna 1, Linha 0: Nome -->
-                    <Label
-                        Grid.Column="1"
-                        Margin="5"
-                        Text="Rosa Maria Noobs"
-                        FontFamily="Jaldi"
-                        FontSize="15"
-                        TextColor="#757575"
-                        VerticalOptions="End"/>
+                                <Grid ColumnDefinitions="60,*,Auto" RowDefinitions="Auto,Auto">
+                                    <!-- Image column -->
+                                    <Image
+                                        Grid.RowSpan="2"
+                                        WidthRequest="46"
+                                        Source="profile.png"
+                                        BackgroundColor="Transparent"
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="Center" />
 
-                    <!-- Coluna 1, Linha 1: Label "PRAF" -->
-                    <Label
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Margin="5"
-                        Text="-"
-                        FontSize="12"
-                        TextColor="#B3B3B3"
-                        VerticalOptions="Start"/>
+                                    <!-- Name label -->
+                                    <Label
+                                        Grid.Column="1"
+                                        Margin="5"
+                                        Text="{Binding Name}"
+                                        FontFamily="Jaldi"
+                                        FontSize="15"
+                                        TextColor="#757575"
+                                        VerticalOptions="End"/>
 
-                    <!-- Coluna 2, Linha 1: NÃºmero de Telefone -->
-                    <Label
-                        Grid.Column="2"
-                        Grid.Row="1"
-                        Text="(99) 99999-9999"
-                        Padding="2"
-                        FontSize="15"
-                        TextColor="#B3B3B3"
-                        VerticalOptions="Start"
-                        HorizontalOptions="End"/>
-                </Grid>
-            </Frame>
+                                    <!-- Observation label -->
+                                    <Label
+                                        Grid.Column="1"
+                                        Grid.Row="1"
+                                        Margin="5"
+                                        Text="TODO EMPRESA AQUI"
+                                        FontSize="12"
+                                        TextColor="#B3B3B3"
+                                        VerticalOptions="Start"/>
 
-            <Frame
-                Margin="3"
-                HeightRequest="70"
-                BackgroundColor="#D9D9D9"
-                CornerRadius="18"
-                Padding="7"
-                HasShadow="False">
+                                    <!-- Phone number label -->
+                                    <Label
+                                        Grid.Column="2"
+                                        Grid.Row="1"
+                                        Text="{Binding PhoneNumber}"
+                                        Padding="2"
+                                        FontSize="15"
+                                        TextColor="#B3B3B3"
+                                        VerticalOptions="Start"
+                                        HorizontalOptions="End"/>
+                                </Grid>
+                            </Frame>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
 
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="EditPerson"/>
-                </Frame.GestureRecognizers>
-
-                <Grid ColumnDefinitions="60,*,Auto" RowDefinitions="Auto,Auto">
-                    <!-- Coluna 0, Linhas 0 e 1: CÃ­rculo -->
-                    <Image
-                        Grid.RowSpan="2"
-                        WidthRequest="46"
-                        Source="willdeepass.png"
-                        BackgroundColor="Transparent"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center" />
-
-                    <!-- Coluna 1, Linha 0: Nome -->
-                    <Label
-                        Grid.Column="1"
-                        Margin="5"
-                        Text="Algusto Cabassius"
-                        FontFamily="Jaldi"
-                        FontSize="15"
-                        TextColor="#757575"
-                        VerticalOptions="End"/>
-
-                    <!-- Coluna 1, Linha 1: Label "PRAF" -->
-                    <Label
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Margin="5"
-                        Text="Andaime"
-                        FontSize="12"
-                        TextColor="#B3B3B3"
-                        VerticalOptions="Start"/>
-
-                    <!-- Coluna 2, Linha 1: NÃºmero de Telefone -->
-                    <Label
-                        Grid.Column="2"
-                        Grid.Row="1"
-                        Text="(99) 99999-9999"
-                        Padding="2"
-                        FontSize="15"
-                        TextColor="#B3B3B3"
-                        VerticalOptions="Start"
-                        HorizontalOptions="End"/>
-                </Grid>
-            </Frame>
-            <Button Text="+" BackgroundColor="#E5A000" Clicked="AddPerson" HorizontalOptions="End" Margin="10"/>
-        </VerticalStackLayout>
-
-    </ScrollView>
+        <!-- Button fixed at the bottom right corner -->
+        <Button
+            Grid.RowSpan="2"
+            Text="+"
+            BackgroundColor="#E5A000"
+            Clicked="AddPerson"
+            WidthRequest="60"
+            HeightRequest="60"
+            CornerRadius="30"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="10" />
+    </Grid>
 </ContentPage>

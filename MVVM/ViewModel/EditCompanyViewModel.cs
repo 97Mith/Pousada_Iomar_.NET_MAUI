@@ -14,9 +14,7 @@ public partial class EditCompanyViewModel : ObservableObject
     private readonly ICompanyRepository _companyRepository;
     private readonly INavigation _navigation;
     public EditCompanyViewModel()
-    {
-
-    }
+    { }
 
     public EditCompanyViewModel(ICompanyRepository companyRepository, Company company, INavigation navigation)
     {

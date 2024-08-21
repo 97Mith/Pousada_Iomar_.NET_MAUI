@@ -18,8 +18,8 @@
                 </Grid.ColumnDefinitions>
 
                 <Image 
-                    WidthRequest="17" 
-                    HeightRequest="17" 
+                    WidthRequest="20" 
+                    HeightRequest="20" 
                     VerticalOptions="Center" 
                     HorizontalOptions="Center" 
                     Grid.Column="0" 
