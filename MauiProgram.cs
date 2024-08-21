@@ -1,4 +1,5 @@
 ﻿using IomarPousada.Data.Interface;
+using IomarPousada.Data.Repository;
 using Microsoft.Extensions.Logging;
 
 namespace IomarPousada;
@@ -20,6 +21,7 @@ public static class MauiProgram
         builder.Logging.AddDebug();
 #endif
         builder.Services.AddSingleton<ICompanyRepository, CompanyRepository>();
+        builder.Services.AddSingleton<IPersonRepository, PersonRepository>();
 
         return builder.Build();
     }

@@ -7,10 +7,12 @@ namespace IomarPousada.MVVM.View;
 public partial class HomePage : TabbedPage
 {
     private readonly ICompanyRepository _companyRepository;
-    public HomePage(ICompanyRepository company)
+    private readonly IPersonRepository _personRepository;
+    public HomePage(ICompanyRepository company, IPersonRepository person)
     {
         InitializeComponent();
         _companyRepository = company;
+        _personRepository = person;
 
         var page1 = new AccomodationPage()
         {
@@ -18,7 +20,7 @@ public partial class HomePage : TabbedPage
             IconImageSource = "bedicon.svg"
         };
 
-        var page2 = new GuestsPage()
+        var page2 = new GuestsPage(_personRepository)
         {
             Title = "Hóspedes",
             IconImageSource = "personicon.svg"
