@@ -3,10 +3,175 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IomarPousada.MVVM.View.GuestsPage"
              Title="GuestsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
+            <!-- Novo Frame inserido aqui -->
+            <Frame
+                Margin="3"
+                HeightRequest="70"
+                BackgroundColor="#D9D9D9"
+                CornerRadius="18"
+                Padding="7"
+                HasShadow="False">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="EditPerson"/>
+                </Frame.GestureRecognizers>
+
+                <Grid ColumnDefinitions="60,*,Auto" RowDefinitions="Auto,Auto">
+                    <!-- Coluna 0, Linhas 0 e 1: CÃ­rculo -->
+                    <Image
+                        Grid.RowSpan="2"
+                        WidthRequest="46"
+                        Source="profile.png"
+                        BackgroundColor="Transparent"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center" />
+
+                    <!-- Coluna 1, Linha 0: Nome -->
+                    <Label
+                        Grid.Column="1"
+                        Margin="5"
+                        Text="JosÃ© de Alcantara"
+                        FontFamily="Jaldi"
+                        FontSize="15"
+                        TextColor="#757575"
+                        VerticalOptions="End"/>
+
+                    <!-- Coluna 1, Linha 1: Label "PRAF" -->
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Margin="5"
+                        Text="PRAF"
+                        FontSize="12"
+                        TextColor="#B3B3B3"
+                        VerticalOptions="Start"/>
+
+                    <!-- Coluna 2, Linha 1: NÃºmero de Telefone -->
+                    <Label
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        Text="(99) 99999-9999"
+                        Padding="2"
+                        FontSize="15"
+                        TextColor="#B3B3B3"
+                        VerticalOptions="Start"
+                        HorizontalOptions="End"/>
+                </Grid>
+            </Frame>
+            <!-- Fim do Frame -->
+
+            <Frame
+                Margin="3"
+                HeightRequest="70"
+                BackgroundColor="#D9D9D9"
+                CornerRadius="18"
+                Padding="7"
+                HasShadow="False">
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="EditPerson"/>
+                </Frame.GestureRecognizers>
+
+                <Grid ColumnDefinitions="60,*,Auto" RowDefinitions="Auto,Auto">
+                    <!-- Coluna 0, Linhas 0 e 1: CÃ­rculo -->
+                    <Image
+                        Grid.RowSpan="2"
+                        WidthRequest="46"
+                        Source="ledsnoobs.png"
+                        BackgroundColor="Transparent"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center" />
+
+                    <!-- Coluna 1, Linha 0: Nome -->
+                    <Label
+                        Grid.Column="1"
+                        Margin="5"
+                        Text="Rosa Maria Noobs"
+                        FontFamily="Jaldi"
+                        FontSize="15"
+                        TextColor="#757575"
+                        VerticalOptions="End"/>
+
+                    <!-- Coluna 1, Linha 1: Label "PRAF" -->
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Margin="5"
+                        Text="-"
+                        FontSize="12"
+                        TextColor="#B3B3B3"
+                        VerticalOptions="Start"/>
+
+                    <!-- Coluna 2, Linha 1: NÃºmero de Telefone -->
+                    <Label
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        Text="(99) 99999-9999"
+                        Padding="2"
+                        FontSize="15"
+                        TextColor="#B3B3B3"
+                        VerticalOptions="Start"
+                        HorizontalOptions="End"/>
+                </Grid>
+            </Frame>
+
+            <Frame
+                Margin="3"
+                HeightRequest="70"
+                BackgroundColor="#D9D9D9"
+                CornerRadius="18"
+                Padding="7"
+                HasShadow="False">
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="EditPerson"/>
+                </Frame.GestureRecognizers>
+
+                <Grid ColumnDefinitions="60,*,Auto" RowDefinitions="Auto,Auto">
+                    <!-- Coluna 0, Linhas 0 e 1: CÃ­rculo -->
+                    <Image
+                        Grid.RowSpan="2"
+                        WidthRequest="46"
+                        Source="willdeepass.png"
+                        BackgroundColor="Transparent"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center" />
+
+                    <!-- Coluna 1, Linha 0: Nome -->
+                    <Label
+                        Grid.Column="1"
+                        Margin="5"
+                        Text="Algusto Cabassius"
+                        FontFamily="Jaldi"
+                        FontSize="15"
+                        TextColor="#757575"
+                        VerticalOptions="End"/>
+
+                    <!-- Coluna 1, Linha 1: Label "PRAF" -->
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Margin="5"
+                        Text="Andaime"
+                        FontSize="12"
+                        TextColor="#B3B3B3"
+                        VerticalOptions="Start"/>
+
+                    <!-- Coluna 2, Linha 1: NÃºmero de Telefone -->
+                    <Label
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        Text="(99) 99999-9999"
+                        Padding="2"
+                        FontSize="15"
+                        TextColor="#B3B3B3"
+                        VerticalOptions="Start"
+                        HorizontalOptions="End"/>
+                </Grid>
+            </Frame>
+            <Button Text="+" BackgroundColor="#E5A000" Clicked="AddPerson" HorizontalOptions="End" Margin="10"/>
+        </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>
