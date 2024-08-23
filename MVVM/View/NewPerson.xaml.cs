@@ -1,3 +1,4 @@
+using IomarPousada.Data.Interface;
 using IomarPousada.MVVM.ViewModel;
 using IomarPousada.Validation;
 using System.Text;
@@ -7,12 +8,14 @@ namespace IomarPousada.MVVM.View;
 public partial class NewPerson : ContentPage
 {
 	private readonly IPersonRepository _personRepository;
+    private readonly ICompanyRepository _companyRepository;
 	private PersonViewModel _personViewModel;
-	public NewPerson(IPersonRepository personRepository)
+	public NewPerson(ICompanyRepository companyRepository, IPersonRepository personRepository)
 	{
 		InitializeComponent();
 		_personRepository = personRepository;
-		_personViewModel = new PersonViewModel(_personRepository, Navigation);
+        _companyRepository = companyRepository;
+		_personViewModel = new PersonViewModel(companyRepository:_companyRepository, personRepository: _personRepository, navigation: Navigation);
 		BindingContext = _personViewModel;
 	}
 

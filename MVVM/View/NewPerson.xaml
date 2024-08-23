@@ -136,17 +136,12 @@
             TextColor="#B3B3B3"
             FontSize="16"
             BackgroundColor="#1C242F"
-            HorizontalOptions="FillAndExpand">
-            <Picker.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>-- sem empresa --</x:String>
-                    <x:String>OpÃ§Ã£o 2</x:String>
-                    <x:String>OpÃ§Ã£o 3</x:String>
-                </x:Array>
-            </Picker.ItemsSource>
-        </Picker>
+            HorizontalOptions="FillAndExpand"
+            ItemsSource="{Binding Companies}"
+            ItemDisplayBinding="{Binding Name}"
+            SelectedItem="{Binding Person.Company, Mode=TwoWay}"/>
 
-        <!-- BotÃ£o de Salvar -->
+            <!-- BotÃ£o de Salvar -->
         <Button 
             Margin="3"
             Text="Salvar" 

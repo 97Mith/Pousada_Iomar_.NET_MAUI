@@ -20,7 +20,9 @@ public partial class HomePage : TabbedPage
             IconImageSource = "bedicon.svg"
         };
 
-        var page2 = new GuestsPage(_personRepository)
+        var page2 = new GuestsPage
+            (companyRepository: _companyRepository, 
+            personRepository: _personRepository)
         {
             Title = "Hóspedes",
             IconImageSource = "personicon.svg"

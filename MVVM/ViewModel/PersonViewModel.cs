@@ -1,6 +1,8 @@
 ﻿
 
 using CommunityToolkit.Mvvm.ComponentModel;
+using IomarPousada.Data.Interface;
+using IomarPousada.MVVM.Model;
 using IomarPousada.MVVM.View;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
@@ -9,6 +11,9 @@ namespace IomarPousada.MVVM.ViewModel;
 
 public partial class PersonViewModel : ObservableObject
 {
+    [ObservableProperty]
+    private ObservableCollection<Company> _companies;
+
     [ObservableProperty]
     private ObservableCollection<Person> _people;
 
@@ -27,20 +32,24 @@ public partial class PersonViewModel : ObservableObject
     public ICommand AddCommand { get; set; }
     public ICommand RemoveCommand { get; set; }
     public ICommand UpdateCommand { get; set; }
+    public ICommand LoadCompaniesCommand { get; set; }
     public ICommand DisplayCommand { get; set; }
     public ICommand DisplayByIdCommand { get; set; }
     public ICommand RefreshCommand { get; set; }
     public ICommand ToEditCommand {  get; set; }
 
     private readonly IPersonRepository _personRepository;
+    private readonly ICompanyRepository _companyRepository;
     private readonly INavigation _navigation;
 
     public PersonViewModel(){ }
 
-    public PersonViewModel(IPersonRepository personRepository, INavigation navigation)
+    public PersonViewModel(ICompanyRepository companyRepository, IPersonRepository personRepository, INavigation navigation)
     {
         _personRepository = personRepository;
+        _companyRepository = companyRepository;
         _navigation = navigation;
+        Companies = new ObservableCollection<Company>();
         People = new ObservableCollection<Person>();
         Person = new Person();
 
@@ -50,10 +59,12 @@ public partial class PersonViewModel : ObservableObject
         DisplayCommand = new Command(async () => await DisplayPeople());
         RefreshCommand = new Command(async () => await Refresh());
         ToEditCommand = new Command<Person>(async (person) => await ToEditPerson(person));
+        LoadCompaniesCommand = new Command(async () => await DisplayCompanies());
 
-        LoadPeople();
+        LoadPeopleAndCompanies();
     }
 
+    
     public async Task AddPerson()
     {
         await _personRepository.InitializeAsync();
@@ -66,7 +77,7 @@ public partial class PersonViewModel : ObservableObject
     {
         await _personRepository.InitializeAsync();
         await _personRepository.DeleteAsync(person);
-        //await Refresh();
+        await Refresh();
     }
 
     private async Task UpdatePerson()
@@ -115,9 +126,21 @@ public partial class PersonViewModel : ObservableObject
         await _navigation.PushModalAsync(new EditPerson(_personRepository, person));
     }
 
-    private async void LoadPeople()
+    private async void LoadPeopleAndCompanies()
     {
         await DisplayPeople();
+        await DisplayCompanies();
     }
+    
 
+    private async Task DisplayCompanies()
+    {
+        await _companyRepository.InitializeAsync();
+        var companies = await _companyRepository.GetAllAsync();
+        Companies.Clear();
+        foreach (var company in companies)
+        {
+            Companies.Add(company);
+        }
+    }
 }
