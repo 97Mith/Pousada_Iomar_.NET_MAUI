@@ -1,3 +1,4 @@
+using IomarPousada.Data.Interface;
 using IomarPousada.MVVM.ViewModel;
 using IomarPousada.Validation;
 using System.Text;
@@ -7,12 +8,14 @@ namespace IomarPousada.MVVM.View;
 public partial class EditPerson : ContentPage
 {
     private readonly IPersonRepository _personRepository;
+    private readonly ICompanyRepository _companyRepository;
     private EditPersonViewModel _personViewModel;
-	public EditPerson(IPersonRepository _personService, Person person)
+	public EditPerson(ICompanyRepository companyRepository, IPersonRepository _personService, Person person)
 	{
 		InitializeComponent();
+        _companyRepository = companyRepository;
         _personRepository = _personService;
-        _personViewModel = new EditPersonViewModel(_personRepository, person, Navigation );
+        _personViewModel = new EditPersonViewModel(companyRepository: _companyRepository, personRepository: _personRepository, person: person, navigation: Navigation );
         BindingContext = _personViewModel;
     }
 

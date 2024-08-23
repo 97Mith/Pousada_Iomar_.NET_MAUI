@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using IomarPousada.Data.Interface;
 using System.Windows.Input;
 
 namespace IomarPousada.MVVM.ViewModel;
@@ -10,13 +11,15 @@ public partial class EditPersonViewModel : ObservableObject
 
     public ICommand SaveCommand {  get; set; }
     private readonly IPersonRepository _personRepository;
+    private readonly ICompanyRepository _companyRepository;
     private readonly INavigation _navigation;
 
     public EditPersonViewModel()
     { }
 
-    public EditPersonViewModel(IPersonRepository personRepository, Person person, INavigation navigation)
+    public EditPersonViewModel(ICompanyRepository companyRepository, IPersonRepository personRepository, Person person, INavigation navigation)
     {
+        _companyRepository = companyRepository;
         _personRepository = personRepository;
         _navigation = navigation;
         _person = person;

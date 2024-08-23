@@ -123,7 +123,7 @@ public partial class PersonViewModel : ObservableObject
 
     private async Task ToEditPerson(Person person)
     {
-        await _navigation.PushModalAsync(new EditPerson(_personRepository, person));
+        await _navigation.PushModalAsync(new EditPerson(_companyRepository, _personRepository, person));
     }
 
     private async void LoadPeopleAndCompanies()

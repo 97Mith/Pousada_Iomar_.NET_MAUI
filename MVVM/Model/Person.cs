@@ -20,8 +20,8 @@ public class Person : Base
 
 
     //propriedades de navegação
-
     public int CompanyId { get; set; }
+    //public Company Company { get; set; }
     public int AccomodationNum { get; set; }
 
     //................................

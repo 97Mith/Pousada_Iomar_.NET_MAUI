@@ -92,7 +92,7 @@
                                         Grid.Column="1"
                                         Grid.Row="1"
                                         Margin="5"
-                                        Text="TODO EMPRESA AQUI"
+                                        Text="{Binding CompanyId}"
                                         FontSize="12"
                                         TextColor="#B3B3B3"
                                         VerticalOptions="Start"/>
